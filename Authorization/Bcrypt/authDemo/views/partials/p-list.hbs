@@ -1,0 +1,21 @@
+{{#each products}}
+    <tr>
+    <th>{{this.product_id}}</th>
+    <th>{{this.name}}</th> 
+    <th>{{this.price}}</th>
+    <th>{{this.inventory}}</th>
+    <th><a href="/products/{{this.product_id}}/edit">
+  <img id="img" src="http://bit.ly/2yeiLXi"</a></th>
+    <th><a href="/products/{{this.product_id}}?_method=DELETE">
+  <img id="img" src="http://bit.ly/1IN1L7V"</a></th>
+  </tr>
+{{/each}}
+
+
+<style>
+img{
+  width: 20px;
+  height: 20px;
+}
+</style>
+

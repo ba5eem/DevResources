@@ -1,0 +1,154 @@
+html{
+  height: 100%;
+  background-image: url('../assets/paintSplash.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body{
+  text-align: center; 
+}
+
+h1{
+  text-align: center;
+  font-family: 'Gloria Hallelujah', cursive;
+  font-size: 6vw;
+  margin-top: 2vw;
+  margin-bottom: 2vw;  
+  max-width: 100%;
+  max-height: 100%;
+  /*background-image: url('../assets/Paint-palette.png');
+  background-position: top;
+  background-repeat: no-repeat;*/
+}
+
+.cellsInRow{
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  border: 1px solid grey;
+  margin-top: 0px;
+
+}
+
+#test{
+  display: inline-block;
+  height: 12px;
+  width: 12px;
+  border-right: 4px solid black;
+  border-bottom: 4px solid black;
+  margin-top: 0px;
+}
+
+.paintParentRow{
+  display: inline-block;
+  height: 4vw;
+  width: 4vw;
+  margin-top: 30px;
+  border: 1px solid grey;
+  border-radius: 100vw;
+}
+
+.cellDivRow{
+  text-align: center;
+}
+
+.celldivrow{
+  text-align: center;
+}
+
+#action{
+  text-align: center;
+  color: white;
+  display: inline-block;
+  height: 3.5vw;
+  width: 6.5vw;
+  border: 1px solid black;
+  border-radius: 1vw;
+  margin-top: 30px;
+  background-color: salmon;
+  font-family:'Baloo Tammudu', cursive;
+  font-size: 1.5vw;
+  margin: 2vw;
+}
+
+#action2{
+  text-align: center;
+  color: lightblue;
+  display: inline-block;
+  height: 3.5vw;
+  width: 6.5vw;
+  border: 1px solid black;
+  border-radius: 1vw;
+  margin-top: 30px;
+  background-color: blue;
+  font-family:'Baloo Tammudu', cursive;
+  font-size: 1.5vw;
+  margin: 2vw;
+}
+
+#action3{
+  text-align: center;
+  color: white;
+  display: inline-block;
+  height: 3.5vw;
+  width: 6.5vw;
+  border: 1px solid black;
+  border-radius: 1vw;
+  margin-top: 30px;
+  background-color: lightgreen;
+  font-family:'Baloo Tammudu', cursive;
+  font-size: 1.5vw;
+  margin: 2vw;
+}
+
+#action4{
+  text-align: center;
+  color: white;
+  display: inline-block;
+  height: 3.5vw;
+  width: 6.5vw;
+  border: 1px solid black;
+  border-radius: 1vw;
+  margin-top: 2vw;
+  background-color: black;
+  font-family:'Baloo Tammudu', cursive;
+  font-size: 1.5vw;
+}
+
+.parentShapeBox{
+  margin-top: 10px;
+}
+
+.circleStamp{
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background: red;
+  border-radius:12.5px;
+  margin: 5px;
+}
+
+.squareStamp{
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background: red;
+  margin: 5px;
+}
+
+.triangleStamp{
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-bottom: 25px solid red;
+  border-left: 12.5px solid transparent;
+  border-right: 12.5px solid transparent;
+  margin: 5px;
+}
+
+.ftText{
+  margin-top: 10px;
+  font-family: 'Gloria Hallelujah', cursive;
+}

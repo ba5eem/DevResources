@@ -1,0 +1,31 @@
+{
+  "name": "Be-Positive",
+  "version": "0.0.0",
+  "description": "simulation using the rules for valid blood tranfusions",
+  "main": "index.html",
+  "scripts": {
+    "test": "gulp test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DevLeague/Be-Positive.git"
+  },
+  "keywords": [
+    "haxe",
+    "webgl",
+    "education"
+  ],
+  "author": "@theRemix",
+  "license": "BSD2",
+  "bugs": {
+    "url": "https://github.com/DevLeague/Be-Positive/issues"
+  },
+  "homepage": "https://github.com/DevLeague/Be-Positive",
+  "devDependencies": {
+    "gulp": "^3.8.8",
+    "gulp-connect": "^2.0.6",
+    "gulp-uglify": "^1.0.1",
+    "gulp-webserver": "^0.8.3",
+    "tiny-lr": "^0.1.4"
+  }
+}

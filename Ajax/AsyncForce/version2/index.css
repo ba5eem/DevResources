@@ -1,0 +1,147 @@
+body{
+  background-color: cornflowerblue;
+  box-sizing: border-box;
+}
+
+@media only screen and (min-width: 400px) {
+
+
+#topContainer{
+  display: flex;
+  background-color: black;
+  flex: 0 0 100%;
+  border: 4px solid black;
+  height: 34px;
+  justify-content: flex-end;
+}
+
+#title {
+  background-color: grey;
+  color: black;
+  font-size: 30px;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+
+#search-div {
+  position: relative;
+  max-width: 800px;
+}
+#background-input {
+  position: absolute;
+  color: #999999;
+  height:25px;
+  width:450px;
+}
+
+#search{
+  position: relative;
+  background: transparent;
+  height:25px;
+  width:450px;
+}
+
+#top-div-left{
+  display: flex;
+  margin-right: 20px;
+}
+
+#resourceType{
+  width: 200px;
+  max-height: 30px;
+}
+
+#top-div-right{
+  display: flex;
+  order: 1;
+}
+
+#magnify{
+  background-color: yellow;
+  margin-top: 1px;
+  width: 30px;
+  height: 30px;
+}
+
+/*All Snippet CSS is below*/
+
+
+.container {
+  justify-content: space-between; 
+  margin-top: 20px;
+  background-color: black;
+  height: 650px;
+  max-width: 100%;
+
+
+}
+
+#containerA {
+  background-color: black;
+  justify-content: 
+}
+#containerB {
+  background-color: black;
+  border: 4px solid grey;
+  flex: 0 0 30%;
+}
+#containerC {
+  background-color: black;
+  border: 4px solid grey;
+  flex: 0 0 30%;
+
+}
+
+#movieTitle{
+  background-color: black;
+  border-bottom: 1px solid darkgrey;
+  width: 100%;
+  height: 300px;
+}
+
+#filmTitle{
+  color:white;
+  font-size: 60px;
+}
+
+#film-sub-title {
+  color: grey;
+}
+
+#ratingStar{
+  width: 30px;
+  height: 30px;
+  margin-left: 10px;
+  vertical-align: middle;
+}
+#filmRating{
+  color: grey;
+  margin-left: 20px;
+}
+
+#movie {
+  border: 3px solid white;
+  margin-left: 10px;
+  margin-bottom: 30px;
+  max-width: 20%;
+  max-height: 25%;
+}
+#movieB{
+  border: 1px solid darkgrey;
+  width: 70%;
+  height: 20%;
+  margin-left: 40px;
+}
+
+#year{
+  color: grey;
+  font-size: 40px;
+}
+
+
+}
+
+
+
+

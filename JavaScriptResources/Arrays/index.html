@@ -1,0 +1,22 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>JavaScript Array Methods</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="lib/css/mocha.css">
+    </head>
+    <body>
+        <div id="mocha"></div>
+        <script src="lib/js/mocha.js"></script>
+        <script src="lib/js/chai.js"></script>
+        <script src="lib/js/sinon-chai.js"></script>
+        <script src="lib/js/sinon.js"></script>
+        <script>mocha.setup('bdd');</script>
+        <script src="arrayMethods.js" data-cover></script>
+        <script src="test/arrayMethods-spec.js"></script>
+        <script>window.onload = function() {mocha.run() };</script>
+    </body>
+</html>
