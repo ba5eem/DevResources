@@ -1,0 +1,123 @@
+html{
+  height: 100%;
+  background-image: url('../assets/paintSplash.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body{
+  text-align: center; 
+}
+
+h1{
+  text-align: center;
+  font-family: 'Gloria Hallelujah', cursive;
+  font-size: 6vw;
+  margin-top: 10vw;
+  margin-bottom: 3vw;  
+  width:auto;
+  height: auto;
+  background-image: url('../assets/Paint-palette.png');
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+.cellsInRow{
+  display: inline-block;
+  height: 0.8vw;
+  width: 0.8vw;
+  border: 1px solid grey;
+  margin-top: 0px;
+
+}
+
+.paintParentRow{
+  display: inline-block;
+  height: 4vw;
+  width: 4vw;
+  margin-top: 30px;
+  border: 1px solid grey;
+  border-radius: 100vw;
+}
+
+.cellDivRow{
+  text-align: center;
+}
+
+.celldivrow{
+  text-align: center;
+}
+
+#action{
+  text-align: center;
+  color: white;
+  display: inline-block;
+  height: 3.5vw;
+  width: 6.5vw;
+  border: 1px solid black;
+  border-radius: 1vw;
+  margin-top: 30px;
+  background-color: salmon;
+  font-family:'Baloo Tammudu', cursive;
+  font-size: 1.5vw;
+}
+
+#action2{
+  text-align: center;
+  color: white;
+  display: inline-block;
+  height: 3.5vw;
+  width: 6.5vw;
+  border: 1px solid black;
+  border-radius: 1vw;
+  margin-top: 30px;
+  background-color: black;
+  font-family:'Baloo Tammudu', cursive;
+  font-size: 1.5vw;
+}
+
+#action3{
+  text-align: center;
+  color: bluegit;
+  display: inline-block;
+  height: 3.5vw;
+  width: 6.5vw;
+  border: 1px solid black;
+  border-radius: 1vw;
+  margin-top: 30px;
+  background-color: lightblue;
+  font-family:'Baloo Tammudu', cursive;
+  font-size: 1.5vw;
+}
+
+#action4{
+  text-align: center;
+  color: bluegit;
+  display: inline-block;
+  height: 3.5vw;
+  width: 6.5vw;
+  border: 1px solid black;
+  border-radius: 1vw;
+  margin-top: 30px;
+  background-color: lightblue;
+  font-family:'Baloo Tammudu', cursive;
+  font-size: 1.5vw;
+}
+
+
+.ftText{
+  margin-top: 10px;
+  font-family: 'Gloria Hallelujah', cursive;
+}
+
+
+
+/*TEST FOR SHAPES*/
+
+#circle {
+  width: 100px;
+  height: 100px;
+  background: red;
+  border-radius: 50px;
+}
