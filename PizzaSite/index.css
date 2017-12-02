@@ -1,0 +1,167 @@
+body {
+  background-color: grey;
+  font-family: 'Indie Flower', cursive;
+}
+
+/*Class CSS Elements found below*/
+.profileHeading {
+  font-size: 60px;
+  text-align: center;
+}
+.aboutMe {
+    background-color: lightgrey;
+    width: 800px;
+    border: 25px black;
+    padding: 25px;
+    margin: 25px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.moreAboutMe {
+    background-color: lightgrey;
+    width: 800px;
+    border: 25px black;
+    padding: 25px;
+    margin: 25px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.designBorder {
+    background-color: lightgrey;
+    width: 800px;
+    border: 5px black;
+    padding: 25px;
+    margin: 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 30px;
+}
+
+.hobbies {
+    background-color: lightgrey;
+    width: 800px;
+    border: 25px black;
+    padding: 25px;
+    margin: 25px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.info {
+    background-color: lightgrey;
+    width: 800px;
+    border: 25px black;
+    padding: 25px;
+    margin: 25px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contactMe {
+    background-color: lightgrey;
+    width: 800px;
+    border: 25px black;
+    padding: 25px;
+    margin: 25px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.comments {
+  width: 600px;
+  height: 50px;
+}
+
+.steps {
+    display: inline;
+    font-size: 40px;
+    margin: 75px; 
+    text-decoration: underline;
+}
+
+
+/*IMG CSS Element found below*/
+#profilePic {
+  height: 200px;
+  width: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#pizzaBase {
+    height: 400px;
+    width: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 0px;
+}
+
+#arrowRight {
+    display: inline-block;
+    margin-left: 1100px;
+}
+
+#arrowLeft {
+    display: inline-block;
+    margin-left: 800px
+    padding-right: 40px;
+}
+
+
+
+
+/*Action Code Hover/cursor/img/etc.*/
+
+.steps:hover {
+    color: yellow;
+}
+
+#arrowRight:hover {
+    background-color: yellow;
+}
+
+#arrowLeft:hover {
+    background-color: yellow;
+}
+
+
+/*All CSS Code for iFrame below*/
+
+iframe:focus {
+    outline: none;
+}
+
+iframe[seamless] { 
+    display: block;
+    border-style: grey;
+}
+
+iframe {
+    width: 1300px;
+    height: 420px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 0px;
+
+}
+
+
+/*All CSS Code for Pizza.html*/
+/*All CSS Code for extras.html*/
+/*All CSS Code for Confirm.html*/
+/*All CSS Code for Pay.html*/
+/*All CSS Code for Delivery.html*/
+
+
+
+

@@ -1,0 +1,103 @@
+body {
+  background-color: grey;
+
+}
+/*Comments*/
+/*CSS Code for For-loop Divs*/
+#main {
+  text-align: center;
+  max-width: 1000px;
+  margin: auto;
+  background-color: black;
+  float:center;
+}
+
+.box {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+}
+
+#clear{
+  text-align: center;
+  max-width: 200px;
+  margin: auto;
+  background-color: black;
+  float:center;
+}
+#reload{
+  width:200px;
+  height: 200px;
+  float: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*All CSS Code below has reached level 1 completion - dont edit without cause- Interesting learn - when dealing with lots of divs - put them in a container to control location with less trouble - a container is just inserting them all into a singular div.
+
+
+
+
+
+/*Sub-heading Title CSS Code*/
+#subBorder {
+   background-color: lightgrey;
+   width:auto;
+   height:auto;
+   border: 2px solid black;
+   text-align: center;
+   font-size: 30px;
+}
+
+/*Code bewlow sets container for color selectors*/
+
+#Submain {
+  text-align: center;
+  max-width: 400px;
+  margin: auto;
+  float:left;
+
+}
+/*Code below is to set the color and hover change of circles.*/
+#b1, #b2, #b3, #b4, #b5, #b6, #b7, #b8 {display: block;background-color: white;height: 50px;width: 50px;margin: auto;position: relative;right:48%;margin-top: 10px;border-radius: 100px;}#b1:hover {width: 400px}#b2:hover {width:400px}#b3:hover {width:400px}#b4:hover {width:400px}#b5:hover {width:400px}#b6:hover {width: 400px}#b7:hover {width: 400px}#b8:hover {width:400px}
+/*CSS Code below is to change color of letter within title - CSS COMPLETE DONT CHANGE*/
+#titleBorder {background-color: black;width:auto;height:auto;border: 2px solid blue;text-align: center;font-size: 40px;}#p{font-size: 200%;color: purple;}#i {font-size: 200%;color: yellow;}#x {font-size: 200%;color: green;}#e {font-size: 200%;color: red;}#l {font-size: 200%;color: blue;}#a {font-size: 200%;color: pink;}#n {font-size: 200%;color: orange;}#t {font-size: 200%;color: lightblue;}#e {font-size: 200%;color: lightgreen;}#r {font-size: 200%;color: yellow;}
+/*CSS Code for each letter color ends here*/
+
