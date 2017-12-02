@@ -1,0 +1,198 @@
+<html>
+  <head>
+    <script src="js/mail-generator.js"></script>
+    <link href="css/style.css" rel="stylesheet" media="screen">
+    <link href="https://fonts.googleapis.com/css?family=Plaster" rel="stylesheet">
+
+    <title>Gee-Mail</title>
+    <script>
+      window.onload = function(){
+        var info = window.geemails;
+          //Counter for emails code - vic said put the counter out of the for loop//
+          document.getElementById("counter").innerHTML = info.length;
+          //End of Counter Code//
+//Beginning of FOR loop code, this for loop generates all data from js file - email content.         
+        for(var i = 0; i<info.length; i++) {
+            console.log(info[i].date);
+            console.log(info[i].subject);
+            console.log(info[i].sender);
+            console.log(info[i].body);
+            console.log(info[i].message);
+            var date = info[i].date;
+            var subject = info[i].subject;
+            var sender = info[i].sender;
+            var body = info[i].body; 
+            
+            
+            var senderBox = document.createElement("div");
+            senderBox.className = "sender";
+            senderBox.innerHTML = "Sender: " + sender;
+            emails.appendChild(senderBox);
+
+            var dateBox = document.createElement("div");
+            dateBox.className = "date";
+            dateBox.innerHTML = "Date: " + date;
+            senderBox.appendChild(dateBox);
+
+            var subjectBox = document.createElement("div");
+            subjectBox.className = "subject";
+            subjectBox.innerHTML = "Subject: " + subject;
+            dateBox.appendChild(subjectBox);
+
+            var bodyBox = document.createElement("div");
+            bodyBox.className = "body";
+            bodyBox.innerHTML = "Body: " + body;
+            subjectBox.appendChild(bodyBox);
+
+ }
+ // End of for loop code - write new functions below this comment. 
+
+var emailElem = document.getElementsByClassName("sender");
+    for(var j = 0; j<emailElem.length; j++){
+      emailElem[j].addEventListener("click", showBody); 
+}
+
+function showBody(){
+    var emailElem = this.querySelector(".body");
+    if (emailElem.style.display === "none"){
+          emailElem.style.display = "block";
+  } else{
+          emailElem.style.display = "none";
+  }
+}
+
+
+
+
+        
+
+};
+
+
+            
+        
+        
+
+        
+
+    </script>
+  </head>
+  <body>
+    <h1 id="heading">Gee-Mail</h1>
+    
+    <img src="http://bit.ly/2h0BDEf" alt="" id="mailLogo">
+    <div class="designBorder">
+    <p id="counter"></p>  
+    </div>
+    <div id="menu">
+      <ul>
+        <li class="menuList">Inbox</li>
+        <li class="menuList">Outbox</li>
+        <li class="menuList">Draft</li>
+        <li class="menuList">Archive</li>
+        <li class="menuList">Trash</li>
+    </ul>
+    </div>
+    <div class = "content">
+      <h1 id="emails" style = text-decoration: underline;"">Emails</h1>
+   
+      
+      
+    </div> 
+
+
+
+  </body>
+</html>
+
+<style>
+  body {
+  background-color: grey;
+    
+
+
+}
+
+
+
+#heading {
+  font-size: 120px;
+  text-align: center;
+  float:right;
+  font-family: 'Plaster', cursive;
+}
+
+#mailLogo {
+  padding-top: 10px;
+  height: 200px;
+  width: 200px;
+
+}
+
+.menuList {
+    list-style-type: none;
+    margin: 1%;
+    padding: 0;
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+    width: 200px;
+    background-color: #f1f1f1;
+}
+
+.menuList:hover {
+    background-color: #555;
+    color: white;
+}
+
+#menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 25%;
+    background-color: #f1f1f1;
+    height: 100%;
+    position: fixed; 
+    overflow: auto; 
+}
+
+.content {
+  margin-left: 25%;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+.designBorder {
+    background-color: lightgrey;
+    width: 100%;
+    border: 5px black;
+    padding: 25px;
+    margin: 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 30px;
+}
+ .date {
+    padding-bottom:;
+    border: 1px solid black;
+ }
+
+#counter {
+    text-align: left;
+
+}
+.body {
+    display: none;
+}
+
+
+
+</style>
+
+
+
+
+    <!-- -->

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/stylesheet.css">
+  <title>Flappy Thing</title>
+</head>
+<body onload="gameStart()">
+<div id="all">
+  <div id="main"></div>
+
+</div>
+<div id="directions">
+  <button onclick="moveUp()" onmouseup="stopMove()" ontouchstart= "moveUp()">UP</button><br><br>
+  <button onclick="moveLeft()" onmouseup="stopMove()" ontouchstart= "moveLeft()">LEFT</button>
+  <button onclick="moveRight()" onmouseup="stopMove()" ontouchstart= "moveRight()">RIGHT</button><br><br>
+  <button onclick="moveDown()" onmouseup="stopDown()" ontouchstart= "moveDown()">DOWN</button><br>
+  
+</div>
+
+
+  
+
+
+<script src="js/app.js"></script>
+</body>
+</html>
+
+<style>
+  body{
+  background-color: grey;
+}
+
+
+#directions{
+  text-align: center;
+  width: 850px;
+
+  
+}
+
+
+
+
+canvas {
+  border: 1px solid red;
+  background-color: #f1f1f1;
+}
+
+</style>

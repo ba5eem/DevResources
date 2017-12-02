@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/stylesheet.css">
+  <title>Magic 8</title>
+</head>
+<body>
+
+<div id="magic8"></div>
+    
+    <!-- Code below is lengthy - span of each letter to have indivual CSS color change -->
+    <div id="titleBorder"><span id="p">M</span><span id="i">A</span><span id="x">G</span><span id="e">I</span><span id="l">C</span><span id="p"> 8 </span><span id="a">B</span><span id="i">A</span><span id="n">L</span><span id="t">L</span><span id="e"></span><span id="r"></span></div>
+    <!-- Title code ends here -->
+    <div id="subBorder"><span id="aa">Think of a ? </span><span id="bb"></span><span id="cc"> and choose a theme!</span></div>
+    <!-- Code of title with colors ends here -->
+
+<!-- Code below are for all DIVS with titles -->
+    <div id="main">
+      <div id="schoolButton">
+      <span id="schoolTitle">SCHOOL</span>
+      </div>
+
+      <div id="workButton">
+      <span id="workTitle">WORK</span>
+      </div>
+
+      <div id="lifeButton">
+      <span id="lifeTitle">LIFE</span>
+      </div>
+
+      <div id="relationshipButton">
+      <span id="relationshipTitle">RELATIONSHIP</span>
+      </div>
+
+      <div id="socialButton">
+      <span id="socialTitle">SOCIAL</span>
+      </div>
+
+      <div id="exerciseButton">
+      <span id="exerciseTitle">EXERCISE</span>
+      </div>
+
+      <div id="randomButton">
+      <span id="randomTitle">RANDOM</span>
+      </div>
+
+      <div id="foodButton">
+      <span id="foodTitle">FOOD</span>
+      </div>
+
+      <div id="centerBox"></div>    
+      <div id="centerBox1"></div> 
+      <div id="message">
+        <span id="randomMessage"></span>
+      </div>
+    </div>
+<!-- Code above are for all DIVS with titles -->
+    
+
+    
+
+<script src="js/app.js"></script>
+</body>
+
+</html>
+
+<style>
+  body {
+  background-color: grey;
+}
+/*Random Message CSS*/
+#message{
+  position: absolute;
+  top:50vw;
+  left:65vw;
+  font-size: 3vw;
+  max-width: 18vw;
+  font-size: bold;
+
+}
+
+
+
+/*ALL CSS code has been set with vw as measurement vs px - to test if it fits better on iphone - when re-sizing browser window during live-server, all items shrink appropriately. the only issue is if text is too long the box wont auto adjust to the text size - have to figure out how to do that.*/
+/*Buttons and center divs CSS Code Below*/
+/*something is not working*/
+
+#main{
+  float:center;
+}
+#centerBox{
+  background-color: black;
+  height:70vw;
+  width:70vw;
+  border: 3vw inset darkgrey;
+  position: absolute;
+  top:22vw;
+  left: 38vw;
+  border-radius: 60vw;
+}
+#centerBox1{
+  background-color: darkgrey;
+  border: 10px inset black;
+  height:40vw;
+  width:40vw;
+  position: absolute;
+  top: 38vw;
+  left: 54vw;
+  border-radius: 60vw;
+
+}
+#schoolButton{
+  height:8vw;
+  width:34vw;
+  text-align: center;
+  background-color:black;
+  border-radius: 60vw;
+  transform: rotate(0deg);
+  position: absolute;
+  top: 20vw; 
+  left: 2vw;
+}
+#schoolTitle{
+  color: darkgrey;
+  float:center;
+  font-size: 6vw;
+}
+#workButton{
+  height:8vw;
+  width:34vw;
+  text-align: center;
+  background-color:green;
+  border-radius: 60vw;
+  transform: rotate(0deg);
+  position: absolute;
+  top: 30vw; 
+  left: 2vw;
+}
+#workTitle{
+  color: black;
+  float:center;
+  font-size: 6vw;
+}
+#lifeButton{
+  height:8vw;
+  width:34vw;
+  text-align: center;
+  background-color:blue;
+  border-radius: 60vw;
+  transform: rotate(0deg);
+  position: absolute;
+  top: 40vw; 
+  left: 2vw;
+}
+#lifeTitle{
+  color: black;
+  float:center;
+  font-size: 6vw;
+}
+#relationshipButton{
+  height:8vw;
+  width:34vw;
+  text-align: center;
+  background-color:red;
+  border-radius: 60vw;
+  transform: rotate(0deg);
+  position: absolute;
+  top: 50vw; 
+  left: 2vw;
+}
+#relationshipTitle{
+  color: black;
+  float:center;
+  font-size: 4.4vw;
+}
+#socialButton{
+  height:8vw;
+  width:34vw;
+  text-align: center;
+  background-color:yellow;
+  border-radius: 30vw;
+  transform: rotate(0deg);
+  position: absolute;
+  top: 60vw; 
+  left: 1vw;
+}
+#socialTitle{
+  color: black;
+  float:center;
+  font-size: 6vw;
+}
+
+#exerciseButton{
+  height:8vw;
+  width:34vw;
+  text-align: center;
+  background-color:orange;
+  border-radius: 60vw;
+  transform: rotate(0deg);
+  position: absolute;
+  top: 70vw; 
+  left: 2vw;
+}
+#exerciseTitle{
+  color: black;
+  float:center;
+  font-size: 6vw;
+}
+#randomButton{
+  height:8vw;
+  width:34vw;
+  text-align: center;
+  background-color:purple;
+  border-radius: 60vw;
+  transform: rotate(0deg);
+  position: absolute;
+  top: 80vw; 
+  left: 2vw;
+}
+#randomTitle{
+  color: black;
+  float:center;
+  font-size: 6vw;
+}
+#foodButton{
+  height:8vw;
+  width:34vw;
+  text-align: center;
+  background-color:orange;
+  border-radius: 60vw;
+  transform: rotate(0deg);
+  position: absolute;
+  top: 90vw; 
+  left: 2vw;
+}
+#foodTitle{
+  color:  black;
+  float:center;
+  font-size: 6vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Sub-heading Title CSS Code*/
+#subBorder {
+   background-color: darkgrey;
+   width:100%;
+   height:auto;
+   border: 0.1vw solid black;
+   text-align: center;
+}
+
+/*CSS Code below is to change color of letter within title - CSS COMPLETE DONT CHANGE*/
+#titleBorder {background-color: black;width:100%;height:auto;text-align: center;font-size: 4vw;}#p{font-size: 8vw;color: purple;}#i {font-size: 6vw;color: yellow;}#x {font-size: 6vw;color: green;}#e {font-size: 6vw;color: red;}#l {font-size: 6vw;color: blue;}#a {font-size: 6vw;color: pink;}#n {font-size: 6vw;color: orange;}#t {font-size: 6vw;color: lightblue;}#e {font-size: 6vw;color: lightgreen;}#r {font-size: 6vw;color: black;}#aa {font-size: 5vw;color: black;}#cc {font-size: 5vw;color: red;}
+/*CSS Code for each letter color ends here
+</style>
