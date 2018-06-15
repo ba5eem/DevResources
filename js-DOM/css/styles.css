@@ -1,0 +1,79 @@
+body{
+  font-family: 'Exo 2', sans-serif;
+  font-size: 20px;
+}
+
+header, #footer{
+  background-image: url("https://www.moon-dream.co.uk/images/MoonDreamideaforwebsitelogo4.jpg");
+  background-repeat: no-repeat;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  opacity: 0.9;
+  color:  #ffcc00;
+}
+
+p{
+  text-align: center;
+}
+
+h1, h2{
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+  color:   #ffcc00;
+  font-family: 'Bungee Shade', cursive;
+
+
+}
+
+.row{
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 45px;
+  margin-bottom: 45px;
+}
+
+img{
+  height: 180px;
+  width: 180px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+  margin-bottom: 18px;
+  -webkit-transition: -webkit-transform 1.0s ease-in-out;
+  transition: transform 1.0s ease-in-out;
+}
+
+img:hover{
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+#name1, #position1, #alias1, #bio1 {
+  text-align: center;
+}
+
+#name2, #position2, #alias2, #bio2 {
+  text-align: center;
+}
+
+#name3, #position3, #alias3, #bio3 {
+  text-align: center;
+}
+
+.name, .position, .alias, .profile{
+  text-align: center;
+}
+
+#name7, #position7, #alias7, #bio7 {
+  text-align: center;
+}
+
+#name8, #position8, #alias8, #bio8, #aliasBox {
+  text-align: center;
+}
+
+#name9, #position9, #alias9, #bio9 {
+  text-align: center;
+}

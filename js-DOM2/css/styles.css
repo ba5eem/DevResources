@@ -1,0 +1,78 @@
+body{
+  font-family: 'Titillium Web', sans-serif;
+}
+
+#oxtail{
+  font-size: 30px;
+}
+
+#result1, #result2, #result3, #result4, #result5{
+  margin-top: 10px;
+  border-top: 1px solid orange;
+  border-bottom: 1px solid orange;
+  padding: 10px;
+}
+
+input{
+  margin-left: 10px;
+}
+
+#header{
+  background-color: red;
+  padding: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+form {
+  display: inline;
+}
+
+#rank{
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  padding: 10px;
+}
+
+.ranking{
+  font-size: 18px;
+  display: inline;
+  margin-left: 20px;
+  border-left: 1px solid black;
+  padding-left: 15px; 
+}
+ 
+.ranking:hover{
+  color: red;
+}
+
+
+#text1, #text2, #text3, #text4, #text5{ 
+  margin-left: 175px;
+  margin-top: -145px;  
+}
+
+#pic1, #pic2, #pic3, #pic4, #pic5{
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+ 
+}
+
+
+#user1, #user2, #user3, #user4, #user5{
+  margin-top: 25px;
+  padding: 10px;
+}
+
+#userId1, #userId2, #userId3, #userId4, #userId5{
+  width: 65px;
+  height: 65px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+#comment1, #comment2, #comment3, #comment4, #comment5{
+  margin-left: 88px;
+  margin-top: -68px;
+}
