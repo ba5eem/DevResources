@@ -1,0 +1,109 @@
+body{
+	font-family: 'Exo', sans-serif;
+}
+
+header{
+	background-color: #6495ED;
+	height: 55px;
+	padding: 10px;
+}
+.menu{
+	display: inline;
+	margin: 10px;
+	font-size: 25px;
+	color: #FFFFFF;
+}
+
+.menu:hover{
+	color: #00008B;
+}
+
+nav{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}
+
+#bio{
+	height: 400px;
+	padding: 25px;
+	margin-top: 20px;
+}
+
+#profilePic{
+	float: left;
+	width: 30%;
+	height: 300px;
+	border: 1px solid black;
+}
+
+#data{
+	float: right;
+	width: 65%;
+}
+
+#fullname{
+	font-size: 40px;
+	border-bottom: 1px solid black;
+	font-weight: 900;
+}
+
+#fullname, #age, #location, #wants, #iconwrapper{
+	margin: 5px;
+}
+
+#age, #location, #wants{
+	font-size: 25px;
+}
+
+
+#iconwrapper{
+	margin-top: 15px;
+}
+
+#emailIcon{
+	float: left;
+	width: 60px;
+	color: #6495ED;
+}
+#emailIcon:hover{
+	color: #0000CD;
+}
+
+#heartIcon{
+	color: #FFC0CB;
+	margin-left: 100px;
+}
+#heartIcon:hover{
+	color: #FF0000;
+}
+
+#emailIcon, #heartIcon{
+	font-size: 50px;
+}
+
+#profile{
+	height: 400px;
+	padding: 25px;
+}
+
+#pro1{
+	padding: 20px;
+	font-size: 30px;
+	font-style: italic;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+}
+
+#pro2{
+	padding: 20px;
+	font-size: 30px;
+	font-style: italic;
+	border: 1px solid black;
+	text-align: center;
+	font-weight: 900;
+	background-color: #00FA9A;
+	margin-top: 25px;
+	
+}

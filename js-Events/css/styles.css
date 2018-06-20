@@ -1,0 +1,43 @@
+body{
+  font-family: 'Arsenal', sans-serif;
+  font-size: 20px;
+}
+
+header, #footer{
+  text-align: center;
+  padding: 20px;
+  background-image: url("https://s-media-cache-ak0.pinimg.com/originals/6d/8e/67/6d8e675659aae9018119a26929acc773.jpg");
+
+  color: white;
+}
+
+
+#main{
+  margin-top: 15px;
+  margin-left: 10px;
+  padding: 7px;
+}
+
+
+
+img{
+  height: 250px;
+  width: 250px;
+}
+
+p{
+  margin-top: 10px;
+}
+
+
+#showmoney{
+  display: none;
+}
+
+button{
+  background-color: aqua;
+}
+
+h3{
+  font-weight: bold;
+}

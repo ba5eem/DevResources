@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Thee Main Event</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+ <link href="https://fonts.googleapis.com/css?family=Arsenal" rel="stylesheet"></head>
+<body>
+  <header>
+    <h1 id="headline">Welcome to thee Main "Event"</h1>
+  </header>
+  <div id="main">
+    <div class="row">
+      <div class="block1 col-sm-4"><img src="http://orig11.deviantart.net/b2e3/f/2013/071/5/d/5db90ad469c8cf1d983d0dd5dab3793c-d5xue13.png" alt="">
+        <h3>Makin' Bacon</h3>
+        <p>Bacon ipsum dolor amet andouille alcatra jowl, turkey sausage sirloin swine. Ham hock doner kevin landjaeger. Meatloaf beef filet mignon, burgdoggen pork bacon rump ham pork loin shank sirloin biltong landjaeger. Pork meatloaf venison, biltong kevin ribeye bresaola. Salami short loin t-bone capicola ribeye landjaeger. Brisket alcatra jerky shank kielbasa pork, pancetta capicola shoulder tongue fatback jowl beef.</p>
+        <button id="one" onclick="moreContent()">Read More</button>
+        <p id="more"></p>
+        </div>
+
+
+      <div class="block2 col-sm-4"><img src="http://images.huffingtonpost.com/2015-08-04-1438723390-8535074-Cover_YoungHipsterGL.jpg" alt="">
+      <h3>HTTP: Hipsters That Train Programmers</h3>
+        <p>Venmo shoreditch ennui, air plant woke chillwave succulents fam beard vegan austin migas williamsburg. Poutine brunch la croix activated charcoal brooklyn, forage occupy viral humblebrag. Tattooed brooklyn listicle dreamcatcher ugh cray, copper mug before they sold out authentic YOLO 90's salvia keffiyeh prism cardigan. </p>
+        <div id="two">
+        <a id="noMore" onclick="lessContent()">Show Less</a>
+        <p id="less">VHS wayfarers brooklyn church-key edison bulb, cred helvetica heirloom chillwave lomo ennui. Lomo heirloom fap jianbing, selfies gastropub you probably haven't heard of them. Austin godard ugh, portland stumptown kale chips taxidermy four dollar toast gastropub gochujang bicycle rights fanny pack microdosing. Kinfolk tousled 8-bit, keytar portland 3 wolf moon typewriter.</p>
+        </div>
+      </div>
+    <div class="block3 col-sm-4"><img src="http://i.imgur.com/AcT9YIL.jpg" alt="">
+    <h3>Tacocat, The Orginal Palindrome King</h3>
+     <p id="biggie" onmousemove="zoom()">Stares at human while pushing stuff off a table the dog smells bad, for stand in front of the computer screen stare at ceiling. Ears back wide eyed intently stare at the same spot stare out the window poop in litter box, scratch the walls, for meow to be let in. Knock dish off table head butt cant eat out of my own dish.</p>
+   </div>
+  </div>
+   <div class="row">
+      <div class="block1 col-sm-4"><img src="https://pbs.twimg.com/profile_images/658746945565954048/Zrf2h3RD_400x400.jpg" alt="">
+        <h3>McDonald's, I'm Not Luvin' it</h3>
+        <p id="showMenu" onclick="valueMenu()">Access Today's Special Dollar Menu.
+          <p id="menu"></p>
+        </p>
+        </div>
+      <div class="block2 col-sm-4"><img src="http://redwagonshoppe.com/image/data/Hendricks-bottle-290107.jpg" alt="">
+      <h3>Gin. </h3>
+        <p id="drink" onclick="redFace()">Gin is a spirit which derives its predominant flavour from juniper berries (Juniperus communis). From its earliest origins in the Middle Ages, gin has evolved from a herbal medicine to an object of commerce in the spirits industry.</p>
+       
+      </div>
+    <div class="block3 col-sm-4"><img src="https://i5.walmartimages.com/asr/347ffd23-710a-47d9-80f7-23f91b2019cb_1.accff0ba9669d853d7e2eed440e61ecc.jpeg" alt="">
+    <h3 >Peanut Butter Cup Oreos!</h3>
+    <div id="cookie">
+    <p id="oreo" onmouseover="showPrice()">Oreo is a sandwich cookie consisting of two chocolateae wafers with a sweet creme filling in between, and (as of 1974) are marketed as "Chocolate Sandwich Cookies" on the package in which they are held.</p>
+    <p id="price"></p>    
+    </div>
+   </div>
+  </div>
+ <div class="row">
+      <div class="block1 col-sm-4"><img src="https://quindinononvatuttobene.files.wordpress.com/2015/01/600full-the-curious-case-of-benjamin-button-photo.jpg" alt="">
+        <h3>Mr. Buttons</h3>
+        <p id="daisy">Add an event listener to the quotes button that will display a quote after it is clicked.</p>
+        <button id="Benjamin">Make Me Say Sumptin'</button>
+        <p id="displayQuote"></p>
+        </div>
+      <div class="block2 col-sm-4"><img src="http://fotos02.farodevigo.es/fotos/noticias/318x200/2009-04-01_IMG_2009-03-25_20:51:01_soc4button.jpg" alt="">
+      <h3>Say It Again, Randomly</h3>
+       <p id="beni">Generate a random quote from clicking on the the button</p>
+       <button id="random">Change da Quotes Son</button>
+       <p id="displayQuotes"></p>
+       
+      </div>
+    <div class="block3 col-sm-4"><img src="http://bigcitybloggers.com/wp-content/uploads/2014/10/logo_man.png" alt="">
+    <h3>Unlock the Secret to Financial Freedom</h3>
+    <p id="freedom">Create an event listener that will show and hide the message when clicking on the button</p>
+       <button id="showHide">Get Secret Now</button>
+       <p id="showmoney">
+        <img id="catmoney" src="http://previews.123rf.com/images/aptypkok/aptypkok1201/aptypkok120100093/11943484-Red-cat-sitting-on-the-dollar-on-the-white-background-Stock-Photo.jpg" alt="">
+      </p>
+   </div>
+  </div>
+ </div>
+ <div id="footer">
+   <p>&copy; 2017 Gin Drinkers Association (GDA) </p>
+ </div>
+ <script src="js/app.js"></script>
+</body>
+</html>

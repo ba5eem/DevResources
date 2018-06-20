@@ -296,6 +296,7 @@ global.bruhdash = {
     for(var i in collection){
       result = myFunc(result, collection[i]);
     }
+    console.log(myFunc);
     return result;
   }
 };
