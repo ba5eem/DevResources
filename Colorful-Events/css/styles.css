@@ -1,10 +1,48 @@
 
 #button{
-  max-height: 400;
-  max-width: 400;
-  width: 400;
+  text-align: center;
+  vertical-align: middle;
+  padding: 50px;
+  max-width: 100px;
+  width: 50px;
   margin: auto;
-  height: 400;
+  height: 50px;
   border: 1px solid black;
   background-color: cornflowerblue;
+}
+
+#buttonA{
+  text-align: center;
+  vertical-align: middle;
+  padding: 50px;
+  max-width: 100px;
+  width: 50px;
+  margin: auto;
+  height: 50px;
+  border: 1px solid black;
+  background-color: lightgreen;
+}
+
+#buttonB{
+  text-align: center;
+  vertical-align: middle;
+  padding: 50px;
+  max-width: 100px;
+  width: 50px;
+  margin: auto;
+  height: 50px;
+  border: 1px solid black;
+  background-color: red;
+}
+
+#buttonC{
+  text-align: center;
+  vertical-align: middle;
+  padding: 50px;
+  max-width: 100px;
+  width: 50px;
+  margin: auto;
+  height: 50px;
+  border: 1px solid black;
+  background-color: orange;
 }
