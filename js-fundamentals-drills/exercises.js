@@ -29,6 +29,9 @@ const tupleToObject = (t) => { return {[t[0]]: t[1]} };
 const tupleToObjectReverse = (t) => { return {[t[1]]: t[0]} };
 const getValues = (obj) => Object.values(obj);
 const getKeys2 = (obj) => Object.keys(obj);
+const arrayToObject = (arr) => arr.reduce((a,key) => { a[key] = false; return a },{});
+
+
 
 /* #objectToArray
  *
@@ -43,24 +46,10 @@ var objectToArray = function (obj){
   for (var key in obj){
     newArray.push([key, obj[key]]);
   }
+  //console.log(newArray);
   return newArray;
 }
 
-/* #arrayToObject
- *
- * takes in an array and returns an object with keys set to the elements in the array and
- * all values set to false.
- *
- * @param {Array}
- * @return {Object}
- */
-var arrayToObject = function (arr){
-  newObj = {};
-  for (var i=0; i<arr.length; i++){
-    newObj[arr[i]] = false;
-  }
-  return newObj;
-}
 
 /* #arraysToObject
  *
