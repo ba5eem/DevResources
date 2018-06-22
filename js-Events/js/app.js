@@ -52,7 +52,7 @@ function valueMenu(){
 		myFavs.innerHTML = menuItems[i];
 		menu.appendChild(myFavs);
 	}
-	
+
 }
 
 //5. Gin.
@@ -118,16 +118,28 @@ function randomQuote(){
 /*Create an event listener that will show and hide the message when clickig on the button.
 */
 
+
+
+
 showHide.addEventListener("click", moneyMaker);
 
-function moneyMaker(){
-	if (showmoney.style.display === "none"){
-		showmoney.style.display = "block";
-	}
-	else{
-		showmoney.style.display = "none";
-	}
-}
+const moneyMaker = () => {
+  showmoney.style.display = ["none", "block"].filter(e => {
+    return showmoney.style.display !== e;
+  })[0];
+};
+
+
+// showHide.addEventListener("click", moneyMaker);
+
+// function moneyMaker(){
+// 	if (showmoney.style.display === "none"){
+// 		showmoney.style.display = "block";
+// 	}
+// 	else{
+// 		showmoney.style.display = "none";
+// 	}
+// }
 
 
 

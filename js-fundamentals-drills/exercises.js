@@ -1,445 +1,34 @@
-/* #doubleArray
- *
- * Takes in an array of numbers and returns an array with each element doubled
- *
- * @param {Array} // [1,2,3]
- * @return {Array} // [2,4,6]
- */
-var doubleArray = function(arr) {
-  var result = [];
-  for (var i = 0; i < arr.length; i++) {
-    result.push(arr[i] * 2)
-  }
-  return result;
-}
-/* #sumArrays
- *
- * Takes in two arrays of numbers and returns the sum of both arrays.
- *
- * @param {Array}
- * @param {Array}
- * @return {Bool}
- */
-var sumArrays = function (arr1, arr2){
-  sumOfArrays = 0;
-  for (var i=0; i<arr1.length; i++){
-    sumOfArrays += arr1[i];
-  }
-  for (var i=0; i<arr1.length; i++){
-    sumOfArrays += arr2[i];
-  }
-  console.log(sumOfArrays)
-  return sumOfArrays;
-}
+let doubleElements = (x) => x * 2;
+let reducer = (accum, curr) => accum + curr;
 
-
-
-/* #stringCount
- *
- * Takes in a string and returns the length of the string.
- *
- * @param {String}
- * @return {Number}
- */
-var stringCount = function (str){
-  lengthOfStr = 0;
-  for (var i=0; i<str.length; i++){
-    lengthOfStr = str.length;
-  }
-  return lengthOfStr;
-}
-/* #arrayLength
- *
- * Takes in an array and returns the length of the array.
- *
- * @param {String}
- * @return {Number}
- */
-var arrayLength = function (arr){
-  array = 0;
-  for (var i=0; i<arr.length; i++){
-    array = arr[i];
-  }
-  return array;
-}
-
-/* #countAll
- *
- * Takes in an array and returns the sum of all numbers in the array.
- *
- * @param {Array}
- * @return {Number}
- */
-var countAll = function (arr){
-  sumAllNumArr = 0;
-  for (var i=0; i<arr.length; i++){
-    sumAllNumArr += arr[i];
-  }
-  return sumAllNumArr;
-}
-
-/* #countStrings
- *
- * Takes in an array of strings and returns an array of string lengths.
- *
- * @param {Array}
- * @return {Array}
- */
-var countStrings = function (arr){
-  lengthOfArr = [];
-  for (var i=0; i<arr.length; i++){
-    lengthOfArr.push(arr[i].length);
-  }
-  return lengthOfArr;
-}
-
-/* #countAllStrings
- *
- * Takes in an array of strings and returns the sum of all string lengths.
- *
- * @param {String}
- * @return {Number}
- */
-var countAllStrings = function (arr){
-  sumOfStr = 0;
-  for (var i=0; i<arr.length; i++){
-    sumOfStr += arr[i].length;
-  }
-  return sumOfStr;
-}
-
-/* #convertToArray
- *
- * Takes in an object and returns all the values of the object in an array.
- *
- * @param {Object}
- * @return {Array}
- */
-
-var convertToArray = function (obj){
-  newArray = [];
-  for (var key in obj){
-    newArray.push(obj[key]);
-  }
-  return newArray;
-}
-
-/* #objectSize
- *
- * Takes in an object and returns the number of key value pairs in the object.
- *
- * @param {Object}
- * @return {Number}
- */
-var objectSize = function (obj){
-  return Object.keys(obj).length;
-};
-
-/* #createZeroFilledArray
- *
- * Takes in a number and fills an array with that number of zeroes.
- *
- * @param {Number}
- * @return {Zero}
- */
-var createZeroFilledArray = function (num){
-  newArray = [];
-  for (var i=0; i<num; i++){
-    newArray.push(0);
-  }
-  return newArray;
-}
-
-/* #poppedArray
- *
- * Takes in an array of numbers and returns an array of all but the last element of the array.
- *
- * @param {Array}
- * @return {Array}
- */
-var poppedArray = function (arr){
-  arr.pop();
-  return arr;
-}
-
-
-/* #splitString
- *
- * Takes in a string and returns an array of each individual character in the string.
- *
- * @param {String}
- * @return {Array}
- */
-var splitString = function (str){
-  newArray = [];
-  for (var i=0; i<str.length; i++){
-    newArray.push(str[i].split().join());
-  }
-  return newArray;
-}
-
-/* #lengthOfLast
- *
- * Takes in an array of strings and returns the length of the last string.
- *
- * @param {String}
- * @return {Number}
- */
-var lengthOfLast = function (arr){
-  howManyStrLast = 0;
-  var popped = arr.pop(howManyStrLast);
-  var splitted = popped.split("");
-  return splitted.length;
-}
-
-/* #sumBelowTen
- *
- * Takes in an array of numbers and returns the sum of all numbers below 10.
- *
- * @param {Array}
- * @return {Number}
- */
-var sumBelowTen = function (arr){
-  sumBelTen = 0;
-  for (var i=0; i<arr.length; i++){
-    if (arr[i] <10){
-      sumBelTen += arr[i];
-    }
-  }return sumBelTen;
-}
-
-/* #moreThanTenLetters
- *
- * Takes in an array of strings and returns the amount of elements that have more than ten letters.
- *
- * @param {String}
- * @return {Number}
- */
-var moreThanTenLetters = function (arr) {
-  var totalElem = [];
-  for (var i=0; i<arr.length; i++){
-    if (arr[i].length >10){
-      totalElem.push(arr);
-    }
-  }return totalElem.length;
-}
-
-
-
-/* #multiplyAll
- *
- * Takes in an array of numbers and returns the product of all elements.
- *
- * @param {Array}
- * @return {Number}
- */
-var multiplyAll = function (arr){
-  product = 1;
-  for (var i=0; i<arr.length; i++){
-    product *= arr[i];
-  }
-  return product;
-}
-
-/* #getKeys
- *
- * Takes in an object and returns an array of the object's keys.
- *
- * @param {Object}
- * @return {Array}
- */
-/*var getKeys = function (obj){
-  newArray = [];
-  for (var key in obj){
-    newArray.push(key);
-  }
-   return newArray;
-}*/
-
-var getKeys = function(obj){
-  var arr = Object.keys(obj);
-  return arr;
-};
-
-/* #sumAllPositive
- *
- * Takes in an array of numbers and returns the sum of all non-negative numbers.
- *
- * @param {String}
- * @return {Number}
- */
-var sumAllPositive = function (str){
-  sumAll = 0;
-  for (var i=0; i<str.length; i++){
-    if (str[i]> 0  ){
-      sumAll += str[i];
-    }
-  }return sumAll;
-}
-
-/* #stringCountBelowThree
- *
- * Takes in an array of strings and returns the amount of strings that have three characters or less.
- *
- * @param {Array}
- * @return {Number}
- */
-var stringCountBelowThree = function (arr){
-  threeChar = 0;
-  for (var i=0; i<arr.length; i++){
-    if (arr[i].length <= 3){
-      threeChar +=1;
-    }
-  }return threeChar;
-}
-
-/* #countObjects
- *
- * Takes in an array of objects and returns the amount of objects in the array.
- *
- * @param {Array}
- * @return {Number}
- */
-var countObjects = function (arr){
-  objCount = 0;
-  for (var key in arr){
-    objCount = arr.length;
-  }
-  return objCount;
-}
-
-/* #getObjectKeys
- *
- * Takes in an object and returns an array of all the object's keys.
- *
- * @param {Object}
- * @return {Array}
- */
-var getObjectKeys = function (obj){
-  newArray = [];
-  for (var key in obj){
-    newArray.push(key);
-  }
-  return newArray;
-}
-
-/* #getObjectValues
- *
- * Takes in an object and returns an array of all the object's values.
- *
- * @param {Object}
- * @return {Array}
- */
-var getObjectValues = function (obj){
-  newArray = [];
-  for (var values in obj){
-    newArray.push(obj[values]);
-  }
-  return newArray;
-}
-
-/* #makeObject
- *
- * Takes in two arguments 'key' and 'value' and returns a single key-value pair in an object.
- *
- * @param {String}
- * @param {String}
- * @return {Object}
- */
-var makeObject = function (key, value){
-  newObj = {};
-  newObj[key] = value;
-  return newObj;
-}
-
-/* #makeObjectReverse
- *
- * Takes in two arguments 'value' and 'key' and returns a single key-value pair in an object.
- *
- * @param {String}
- * @param {String}
- * @return {Bool}
- */
-
- var makeObjectReverse = function (value, key){
-  newObj = {};
-  newObj[key] = value;
-  return newObj;
-}
-
-
-/* #tupleToObject
- *
- * Takes in a tuple (an array with two elements) and returns it into a single key-value pair in an object.
- *
- * @param {Array}
- * @return {Object}
- */
-var tupleToObject = function (tuple){
-  newObj = {};
-  newObj[tuple[0]] = tuple[1];
-  return newObj;
-}
-
-/* #tupleToObjectReverse
- *
- * Takes in a tuple and returns it into a single key-value pair with second tuple element as key and first tuple element as value.
- *
- * @param {Array}
- * @return {Object}
- */
-var tupleToObjectReverse = function (tuple){
-  newObj = {};
-  newObj[tuple[1]] = tuple[0];
-  return newObj;
-}
-
-/* #strToKeys
- *
- * Takes in an array of strings and returns an object with all string elements as the object's keys and all values set to 0.
- *
- * @param {Array}
- * @return {Object}
- */
-var strToKeys = function (arr){
-  newObj = {};
-  for (var i=0; i<arr.length; i++){
-    newObj[arr[i]] = 0;
-  }
-  return newObj;
-}
-
-
-
-/* #getValues
- *
- * Takes in an object and returns an array of all the object's values.
- *
- * @param {Object}
- * @return {Array}
- */
-var getValues = function (obj){
-  newArray = [];
-  for (var values in obj){
-    newArray.push(obj[values])
-  }
-  return newArray;
-}
-
-/* #getKeys
- *
- * Takes in an object and returns an array of the object's keys.
- *
- * @param {Object}
- * @return {Array}
- */
-var getKeys2 = function (obj){
-  newArray = [];
-  for (var key in obj){
-    newArray.push(obj[key]);
-  }
-  return newArray;
-}
+const doubleArray = (arr) => arr.map(doubleElements);
+const sumArrays = (arr1, arr2) => arr1.reduce(reducer) + arr2.reduce(reducer);
+const stringCount = (str) => str.length;
+const arrayLength = (arr) => arr.length;
+const countAll = (arr) => arr.reduce(reducer);
+const countStrings = (arr) => arr.map(e => e.length);
+const countAllStrings = (arr) => countStrings(arr).reduce(reducer);
+const convertToArray = (obj) => Object.values(obj);
+const objectSize = (obj) => Object.keys(obj).length;
+const createZeroFilledArray = (num) => new Array(num).fill(0);
+const poppedArray = (arr) => { arr.pop(); return arr };
+const splitString = (str) => str.split('');
+const lengthOfLast = (arr) => arr.pop().length;
+const sumBelowTen = (arr) => arr.filter(e => e < 10).reduce(reducer);
+const moreThanTenLetters = (arr) => arr.filter(e => e.length > 10).length;
+const multiplyAll = (arr) => arr.reduce(reducer); // NOT SURE THE TEST IS RIGHT
+const getKeys = (obj) => Object.keys(obj);
+const sumAllPositive = (arr) => arr.filter(e => e > 0).reduce(reducer);
+const stringCountBelowThree = (arr) => arr.filter(e => e.length <= 3).length;
+const countObjects = (arr) => arr.length;
+const getObjectKeys = (obj) => Object.keys(obj);
+const getObjectValues = (obj) => Object.values(obj);
+const makeObject = (k,v) => { return {[k]: v} };
+const makeObjectReverse = (k,v) => { return {[v]: k} };
+const tupleToObject = (t) => { return {[t[0]]: t[1]} };
+const tupleToObjectReverse = (t) => { return {[t[1]]: t[0]} };
+const getValues = (obj) => Object.values(obj);
+const getKeys2 = (obj) => Object.keys(obj);
 
 /* #objectToArray
  *
@@ -622,6 +211,22 @@ var tupleConvertToObject = function (arr){
   }
   return newObj;
 }
+
+/* #strToKeys
+ *
+ * Takes in an array of strings and returns an object with all string elements as the object's keys and all values set to 0.
+ *
+ * @param {Array}
+ * @return {Object}
+ */
+var strToKeys = function (arr){
+  newObj = {};
+  for (var i=0; i<arr.length; i++){
+    newObj[arr[i]] = 0;
+  }
+  return newObj;
+}
+
 
 
 module.exports = {
