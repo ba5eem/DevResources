@@ -1,11 +1,11 @@
 
 
-var Calculator = (function(){
-  var balance = 0;
+let Calculator = (function(){
+  let balance = 0;
 
 
   function add(arr){
-    for(var p = 0; p < arr.length; p++){
+    for(let p = 0; p < arr.length; p++){
       if(arr[p] === "+"){
       arr.splice((p-1), 3, (arr[p-1] + arr[p+1]));
       }
@@ -13,7 +13,7 @@ var Calculator = (function(){
   }
 
   function subtract(arr){
-    for(var p = 0; p < arr.length; p++){
+    for(let p = 0; p < arr.length; p++){
       if(arr[p] === "-"){
       arr.splice((p-1), 3, (arr[p-1] - arr[p+1]));
       }
@@ -21,7 +21,7 @@ var Calculator = (function(){
   }
 
   function multiply(arr){
-    for(var p = 0; p < arr.length; p++){
+    for(let p = 0; p < arr.length; p++){
       if(arr[p] === "x"){
       arr.splice((p-1), 3, (arr[p-1] * arr[p+1]));
       }
@@ -29,7 +29,7 @@ var Calculator = (function(){
   }
 
   function divide(arr){
-    for(var p = 0; p < arr.length; p++){
+    for(let p = 0; p < arr.length; p++){
       if(arr[p] === "÷"){
       arr.splice((p-1), 3, (arr[p-1] / arr[p+1]));
       }

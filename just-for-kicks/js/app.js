@@ -49,6 +49,10 @@ function moreLikes(){
   }
 //5. Add an event to the plus icon that will increment the price of the Air Jordan V shoe each time the icon is clicked on.
 
+increase.addEventListener('click', function(){
+  price4.innerHTML = 59000 + this.innerHTML;
+});
+
 
 //6. Add an event to the minus icon that will decrement the price of the Air Jordan V shoe each time the icon is clicked on.
 

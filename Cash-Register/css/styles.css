@@ -12,7 +12,7 @@
 
 #disp{
   text-align: center;
-  background-color: #0099ff;
+  background-color: cornflowerblue;
   margin-right: 300px;
   margin-left: 300px;
   border-radius: 25px;
@@ -82,7 +82,7 @@
 #equals{
   display: inline-block;
   margin-left: 3px;
-  color: #0099ff;
+  color: #A6FF0D;
 }
 
 #clear{
