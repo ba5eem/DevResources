@@ -1,0 +1,21 @@
+body{
+  margin: 0;
+  padding: 0;
+  background: #F2C14E; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left, #738699, #314559); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(left, #738699, #314559); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(left, #738699, #314559); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(left, #738699, #314559); /* Standard syntax */
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  max-width: 60%;
+}
+.img-rounded {
+  width: 20%;
+  height: 20%;
+  margin: 1%;
+  padding: 0;
+}
