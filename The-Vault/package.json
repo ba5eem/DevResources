@@ -1,0 +1,26 @@
+{
+  "name": "the-vault",
+  "version": "1.0.0",
+  "description": "A Mini Closure Exercise",
+  "main": "vault.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha --bail --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devleague/The-Vault.git"
+  },
+  "author": "Dev League LLC",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/devleague/The-Vault/issues"
+  },
+  "homepage": "https://github.com/devleague/The-Vault#readme",
+  "devDependencies": {
+    "chai": "^2.3.0",
+    "mocha": "^2.2.5"
+  }
+}

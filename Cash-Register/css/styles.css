@@ -1,107 +1,12 @@
-#theBody{
-  text-align: center;
-  font-size: 30px;
-  font-family: 'Baloo Tammudu', cursive;
-  color: white;
-  background-color: black;
+#containerA{
+  display: flex;
+  flex-direction: wrap;
 }
 
-#theHead{
-  text-align: center;
-}
-
-#disp{
-  text-align: center;
-  background-color: cornflowerblue;
-  margin-right: 300px;
-  margin-left: 300px;
-  border-radius: 25px;
-}
-
-#total{
-  display: inline-block;
-}
-
-#display{
-  display: inline-block;
-  display: none;
-
-}
-.numButLeft{
-  display: inline-block;
-  margin-right: 40px;
-  margin-left: -192px;
-}
-
-.numBut{
-  display: inline-block;
-  text-align: center;
-  margin-right: 40px;
-}
-
-.numButRight{
-  display: inline-block;
-  text-align: center;
-  margin-right: 40px;
-}
-
-#decimal{
-  display: inline-block;
-  text-align: center;
-  margin-right: 40px;
-}
-
-#add{
-  display: inline-block;
-  text-align: center;
-  color: green;
-  margin-right: 40px;
-}
-
-#subtract{
-  display: inline-block;
-  text-align: center;
-  color: red;
-  margin-right: 40px;
-}
-
-#multiply{
-  display: inline-block;
-  text-align: center;
-  margin-right: 40px;
-  color: #9933ff;
-}
-
-#divide{
-  display: inline-block;
-  text-align: center;
-  margin-right: 40px;
-  color: #ffcc00;
-}
-
-#equals{
-  display: inline-block;
-  margin-left: 3px;
-  color: #A6FF0D;
-}
-
-#clear{
-  display: inline-block;
-  margin-right: -125px;
-}
-
-#balance{
-  display: inline-block;
-  margin-right: -207px;
-  margin-left: -5px;
-}
-
-#deposit{
-  display: inline-block;
-  margin-right: -158px;
-}
-
-#withdraw{
-  display: inline-block;
-  margin-right: -172px;
+.numbers{
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  background-color: salmon;
+  border: 1px solid black;
 }
