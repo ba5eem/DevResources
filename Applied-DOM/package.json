@@ -1,0 +1,24 @@
+{
+  "name": "Applied-DOM",
+  "version": "1.0.0",
+  "description": "Additional Apply Bind Call Exercises",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "live-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devleague/Applied-DOM.git"
+  },
+  "keywords": [],
+  "author": "Dev League LLC",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/devleague/Applied-DOM/issues"
+  },
+  "homepage": "https://github.com/devleague/Applied-DOM#readme",
+  "devDependencies": {
+    "live-server": "^1.1.0"
+  }
+}
