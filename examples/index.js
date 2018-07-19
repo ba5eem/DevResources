@@ -1,14 +1,8 @@
-// EVENTS example for ON/OFF
-var button = document.getElementById('PUSH');
-var box = document.getElementById('box');
-button.innerHTML = "PUSH ME";
+const a = {a: 'ola'}
+const b = {a: 'hola'}
 
-button.addEventListener('click', changeColor);
-box.style.backgroundColor = 'red';
-
-function changeColor(){
-  box.style.backgroundColor = ['red', 'blue'].filter(elem => {
-    return elem !== box.style.backgroundColor;
-  });
+Object.prototype.ola = function(){
+  console.log(this.a);
 };
 
+console.log(Object);
