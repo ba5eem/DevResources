@@ -19,13 +19,80 @@
  * @private {number} _back                 Default value should be set null.
  *
  */
-    class Queue {
 
-        constructor() {
-            this._storage = {};
-            this._front = null;
-            this._back = null;
+ class Queue{
+     constructor(){
+         this._storage = {};
+         this._front = null;
+         this._back = null;
+     }
+
+     size(){
+         console.log("size this._back: " + this._back);
+        if(this._back === null){
+            console.log("setting size to 0")
+            this._back = 0;
+            return this._back;
         }
+        else{
+            return this._back;
+        }
+     }
+
+     enqueue(item){
+         console.log("item: " + item);
+         console.log("before enqueue this._back: " + this._back);
+
+         if(this._back === null){
+             //Set the new queue to start from 0
+             console.log("enqueue: setting size to 0");
+             this._back = 0;
+             console.log("enqueue set this._back: " + this._back);
+             //Set the front/head element to be the first element that enters
+             this._front = this._back;
+         }
+
+         this._storage[this._back] = item;
+         this._back++;
+         console.log("after enqueue this._back: " + this._back);
+     }
+
+     dequeue(){
+         if(this._front === null){
+             console.log("dequeue Empty queue, returning null");
+             return null;
+         }
+         else{
+             console.log("dequeue before this._front: " + this._front);
+             let dequeuedItem = this._storage[this._front];
+
+             //Set the new front/head to be the element behind the first element to be removed. Decrease the size of the queue by 1
+             this._front++;
+             console.log("dequeue after this._front: " + this._front);
+             console.log("dequeue before this._back: " + this._back);
+             this._back--;
+             console.log("dequeue after this._back: " + this._back);
+
+
+             return dequeuedItem;
+         }
+     }
+
+     peek(){
+         console.log("peek this._front: " + this._front);
+         console.log("peek this._back: " + this._back);
+         if(this._back === null){
+             console.log("entered");
+             return null;
+         }
+         else{
+            let peekItem = this._storage[this._front];
+            return peekItem;
+         }
+
+     }
+ }
+
 
   /**
    * Queue Class Method => size()
@@ -35,11 +102,6 @@
    * @name size
    * @return {Number}
    */
-
-        size() {
-            return this._back - this._front;
-            
-        }
 
   /**
    * Queue Class Method => enqueue(item)
@@ -51,13 +113,6 @@
    * @return {Number} returns the new size
    */
 
-        enqueue(item) {
-            this._storage[this._back] = item;
-            this._back ++;
-            return this._storage[this._back - this._front];
-         
-        }
-
   /**
    * Queue Class Method => dequeue()
    * -----------------------------
@@ -67,19 +122,6 @@
    * @return {Object}   Note that everything in javascript is an Object.
    */
 
-        dequeue() {
-            if (this.size() === 0) {
-                return null;
-            }else{  
-                var done = this._storage[this._front];
-                console.log(this._storage);         
-                delete this._storage[this._front];
-                this._front ++;
-                return done;
-                
-            }
-        }
-
    /**
    * Queue Class Method => peek()
    * -----------------------------
@@ -88,16 +130,5 @@
    * @name peek
    * @return {Object}   Note that everything in javascript is an Object.
    */
-
-        peek() {
-            if (this._front - this._back === 0){
-                return null;
-            }else{
-                
-                return this._storage[this._front];
-            }
-        }
-
-}
 
 module.exports = Queue;

@@ -1,43 +1,24 @@
-/**
- * @name  linkedListGenerator
- * @description  Main Module
- * @return {Object} an object exposing methods to be used to manipulate a linked list
- */
 function linkedListGenerator(){
-  var head = null;
-  var tail = null;
+  let head = null;
+  let tail = null;
 
-  return {
-    getHead : getHead,
-    getTail: getTail,
-    add : add,
-    get : get,
-    remove : remove,
-    insert : insert
-  };
 
-  function getHead() {
-    return head;
-  }
+  getHead = () => head;
+  getTail = () => tail;
 
-  function getTail() {
-    return tail;
-  }
-
-  function add(val) {
-    var newNode = {
-      value : val,
-      next : null
+  add = (val) => {
+    let newNode = {
+      value: val, next: null
     };
-
-    if (!head) {      
+    if(!head) {
       head = newNode;
       tail = newNode;
-
-    } else {
-      tail.next = newNode;
-      tail = newNode;
     }
+    else {
+    tail.next = newNode;
+    tail = newNode;
+    }
+
     return tail;
   }
 
@@ -47,11 +28,11 @@ function linkedListGenerator(){
 
     } else if (index === 0) {
       return head;
-    
-    } else { 
-      var targetNode = head;
 
-      for (var i = 0; i < index; i++) {
+    } else {
+      let targetNode = head;
+
+      for (let i = 0; i < index; i++) {
         if (!targetNode.next) {
           return false;
         }
@@ -64,30 +45,30 @@ function linkedListGenerator(){
   }
 
   function remove(index) {
-    var previousNode = get(index - 1);
-    var targetNode = get(index);
-    //var nextNode = get(index+1);
+    let previousNode = get(index - 1);
+    let targetNode = get(index);
+    //let nextNode = get(index+1);
 
     if (!targetNode) {
       return false;
-    
+
     } else if (!previousNode) {
       //head = nextNode;
       head = targetNode.next;
-    
+
     } else if (!targetNode.next) { //OR: nextNode
       tail = previousNode;
       tail.next = null;
-    
+
     } else {
       previousNode.next = targetNode.next;
     }
   }
 
   function insert(val, index) {
-    var previousNode = get(index-1);
-    var targetNode = get(index);
-    var newNode = {
+    let previousNode = get(index-1);
+    let targetNode = get(index);
+    let newNode = {
       value : val,
       next : null
     };
@@ -98,10 +79,20 @@ function linkedListGenerator(){
     } else if (!previousNode) {
       newNode.next = head;
       head = newNode;
-    
+
     } else {
       newNode.next = targetNode;
       previousNode.next = newNode;
     }
   }
+
+
+  return {
+    getHead : getHead,
+    getTail: getTail,
+    add : add,
+    get : get,
+    remove : remove,
+    insert : insert
+  };
 }
