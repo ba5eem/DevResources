@@ -1,0 +1,18 @@
+{
+  "name": "js-stacks",
+  "version": "0.0.1",
+  "description": "A stack datastructure excercise.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha --watch"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0"
+  }
+}
