@@ -1,15 +1,29 @@
-//jshint esversion: 6
+const net = require("net");
 
-const net = require('net');//This class is used to create a TCP or IPC server.
-const server = new net.Socket();
-server.connect(6969, () => {
-  console.log(`connected to server at port '6969'`);
+function randomIP(){
+  let a = [91,92,93,94,95,96,97,98];
+  let c = [1,2];
+  let p = c[Math.floor(c.length * Math.random())]
+  let ip = `10.0.1.1${a[Math.floor(a.length * Math.random())]}`;
+  console.log(ip, ' -- attempted')
+  return ip;
+}
 
-  // |---- readable
-  // v                 v---- writable
-  process.stdin.pipe( server );
 
-  // |---- readable
-  // v         v---- writable
-  server.pipe( process.stdout );
-});
+
+function connect(){
+  const client = net.createConnection(6968,randomIP(), () => {
+
+  client.write("...")
+  client.on("data", data => {
+    console.log(data.toString());
+  });
+  process.stdin.pipe(client);
+})
+}
+
+connect()
+process.on('uncaughtException',function(err){
+   console.log('something terrible happened..')
+   connect()
+})

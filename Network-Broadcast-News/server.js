@@ -10,10 +10,10 @@ const broadcast = (sender, message) => clients
   .forEach(c => {
     c.write(message);
   });
-  const server = net.createServer((client)=> { 
+  const server = net.createServer((client)=> {
     console.log("User has Connected");
+    console.log(client.address());
     clients.push(client);
-
     client.username = null;
     client.write('What is your username?\n');
 
@@ -41,62 +41,3 @@ const broadcast = (sender, message) => clients
 
 
 
-
-
-
-
-
-
-
-
-///////my first attempt/////
-// var sockets = [];
-// let clients = [];
-// const PORT = process.env.port || 6969;
-
-// const server = net.createServer((socket) =>{
-//   sockets.push(socket);
-//   socket.name = socket.remoteAddress + ":" + socket.remotePort;
-
-//   socket.on("data", (data) => {
-//     data.toString();
-//     data = data.slice(0,data.length -1);
-//     console.log('3: ',data.toString());
-//     if(socket.name === socket.remoteAddress + ":" + socket.remotePort){
-//       socket.name = data;
-//       let test = socket.name;
-//       console.log(test.toString());
-//       if(test.toString() === 'baseem'){
-//         socket.write(`Welcome back Baseem!`+'\n' + "You have joined the chatroom");
-//       }console.log(data.toString() + ' has joined');
-//     }else{
-//       console.log('1: ',socket.name);
-//       console.log('2:',socket.remoteAddress + ":" + socket.remotePort );
-//      transmission(socket, data.toString());
-//   }
-//   });
-
-//   socket.on("close", () =>{
-//     console.log(socket + " has disconneted");
-//     sockets.splice(sockets.indexOf(socket), 1);
-//   });
-
-
-
-
-
-//   function transmission(from, message){
-//   let userName = socket.name;
-//   clients.push(userName);
-//   console.log(clients);
-//   var msg=(userName + ": " + message).toString();
-//   sockets.forEach(function(incoming_socket){
-
-//     if(incoming_socket!=from){
-//       incoming_socket.write(msg);
-//     }
-//   });
-// }
-
-
-// }).listen(6969);//close of net.createServer
