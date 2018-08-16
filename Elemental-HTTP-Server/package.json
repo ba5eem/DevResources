@@ -1,0 +1,23 @@
+{
+  "name": "elemental-http-server",
+  "version": "1.0.0",
+  "description": "### Basic HTTP Server that reads from and writes to fs",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jocelynsaysrawr/Elemental-HTTP-Server.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jocelynsaysrawr/Elemental-HTTP-Server/issues"
+  },
+  "homepage": "https://github.com/jocelynsaysrawr/Elemental-HTTP-Server#readme",
+  "devDependencies": {
+    "nodemon": "^1.17.1"
+  }
+}
