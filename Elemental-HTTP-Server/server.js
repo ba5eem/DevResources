@@ -78,3 +78,19 @@ const server = http
   .listen(PORT, () => {
     console.log(`Server started on port: ${PORT}`);
   });
+
+
+
+// const createPage = obj => {
+//   return `<h1>${obj.name}</h1>
+//           <h2>${obj.age}</h2>
+//           <h3>${obj.status}</h2>`
+// }
+
+
+
+// console.log(createPage({
+//   name: 'baseem',
+//   age: 21,
+//   status: 'alive'
+// }))
