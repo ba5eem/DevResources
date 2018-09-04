@@ -1,0 +1,21 @@
+{{#each articles}}
+    <tr>
+    <th>{{this.id}}</th>
+    <th>{{this.title}}</th> 
+    <th>{{this.body}}</th>
+    <th>{{this.author}}</th>
+    <th><a href="/articles/{{this.id}}/edit">
+  <img id="img" src="http://bit.ly/2yeiLXi"</a></th>
+    <th><a href="/articles/{{this.id}}/edit/delete">
+  <img id="img" src="http://bit.ly/1IN1L7V"</a></th>
+  </tr>
+{{/each}}
+
+
+<style>
+img{
+  width: 20px;
+  height: 20px;
+}
+</style>
+
