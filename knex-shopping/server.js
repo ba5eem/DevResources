@@ -1,7 +1,32 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const knex = require('./knex/knex.js');
+const bookshelf = require('bookshelf')(knex);
 const app = express();
+
+//db routes
+const User = bookshelf.Model.extend({
+	tableName: 'users'
+});
+
+
+function success(arg){
+	// do success stuff here
+	console.log(arg)
+};
+
+function failed(arg){
+	// do failed stuff here
+	console.log(arg);
+};
+
+User.where('id',1).fetch()
+.then((res) => success(res))
+.catch((err) => failed(err))
+
+
+
+
 
 // require in routes
 const usersRoutes = require('./routes/users.js');

@@ -7,7 +7,7 @@ module.exports = {
       host : '127.0.0.1',
       user : 'baseem',
       password : 'work',
-      database : 'knexdb',
+      database : 'basdb',
       charset: 'utf8'
     },
     migrations: {
