@@ -2,4 +2,4 @@ version: '3'
 services:
   bookshelf-auth-demo:
     build: .
-    image: lorecrafting/bookshelf-auth-demo:local
+    image: ba5eem/bookshelf-auth-demo:local

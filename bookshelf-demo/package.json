@@ -13,7 +13,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "bcrypt": "^2.0.0",
+    "bcrypt": "^2.0.1",
     "body-parser": "^1.18.2",
     "bookshelf": "^0.13.3",
     "connect-redis": "^3.3.3",

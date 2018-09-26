@@ -1,7 +1,7 @@
 version: '3'
 services:
   bookshelf-auth-demo:
-    image: lorecrafting/bookshelf-auth-demo:${IMAGE_VERSION}-local
+    image: ba5eem/bookshelf-auth-demo:${IMAGE_VERSION}-local
     depends_on:
       - db
     command: ["./node_modules/.bin/nodemon", "app.js"]

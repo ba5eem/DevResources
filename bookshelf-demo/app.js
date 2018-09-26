@@ -26,7 +26,7 @@ app.use(passport.session());
 app.get('/', (req, res) => {
   res.send('sanity check')
 })
-app.use('/api', AuthRoutes);
+app.use('/api', AuthRoutes)
 
 // get all users
 app.get('/api/users', (req, res) => {

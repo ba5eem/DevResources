@@ -1,6 +1,6 @@
 version: '3'
 services:
   bookshelf-auth-demo:
-    image: lorecrafting/bookshelf-auth-demo:${IMAGE_VERSION}
+    image: ba5eem/bookshelf-auth-demo:${IMAGE_VERSION}
     environment:
       NODE_ENV: production
