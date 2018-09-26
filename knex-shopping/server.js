@@ -1,37 +1,30 @@
-const express = require('express');
-const bodyParser = require('body-parser');
-const knex = require('./knex/knex.js');
-const bookshelf = require('bookshelf')(knex);
-const app = express();
+const express 			= require('express');
+const bodyParser 		= require('body-parser');
+const knex 					= require('./knex/knex.js');
+const passport 			= require('passport');
+const bookshelf 		= require('bookshelf')(knex);
+const session 			= require('express-session');
+const RedisStore 		= require('connect-redis')(session);
+const app           = express();
+//db models
+const Users        = require("./knex/models/Users");
+// require in routes
+const usersRoutes   = require('./routes/users.js');
+const productRoutes = require('./routes/products.js');
+const authRoutes    = require('./routes/auth.js');
 
-//db routes
-const User = bookshelf.Model.extend({
-	tableName: 'users'
+const store = session({
+    store: new RedisStore(),
+    secret: 'keyboard cat',
+    resave: false,
 });
 
 
-function success(arg){
-	// do success stuff here
-	console.log(arg)
-};
-
-function failed(arg){
-	// do failed stuff here
-	console.log(arg);
-};
-
-User.where('id',1).fetch()
-.then((res) => success(res))
-.catch((err) => failed(err))
-
-
-
-
-
-// require in routes
-const usersRoutes = require('./routes/users.js');
-const productRoutes = require('./routes/products.js');
-const cartRoutes = require('./routes/cart.js');
+// session
+app.use(store);
+// passport - authentication
+app.use(passport.initialize());
+app.use(passport.session());
 
 // parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: false }))
@@ -40,7 +33,9 @@ app.use(bodyParser.json())
 // routes for CRUD
 app.use('/users', usersRoutes);
 app.use('/products', productRoutes);
-app.use('/cart', cartRoutes);
+app.use('/auth', authRoutes);
+
+
 
 app.use('*', (req, res) => {
 	res.json('404');

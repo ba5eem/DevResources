@@ -11,7 +11,7 @@ route.use(bodyParser.json())
 
 
 route.get('/', (req,res) => {
-	res.json('cart page');
+	res.json('auth page');
 });
 
 module.exports = route;
