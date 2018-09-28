@@ -1,0 +1,5 @@
+version: '3'
+services:
+  bookshelf-auth-demo:
+    build: .
+    image: ba5eem/bookshelf-auth-demo:local
