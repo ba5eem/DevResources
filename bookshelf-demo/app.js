@@ -12,18 +12,21 @@ const AuthRoutes = require('./routes/auth')
 
 const app = express();
 
+//docker exec -it <redis container id> redis-cli
+
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(session({
-  store: new RedisStore(),
+  store: new RedisStore({url: "redis://redis:6379"}),
   secret: 'oompah loompah',
-  resave: false,
-  saveUninitialized: false
+  resave: false, // if no change save it
+  saveUninitialized: true // every connection makes a session - track eveything
 }))
 app.use(passport.initialize());
 app.use(passport.session());
 
 app.get('/', (req, res) => {
+  console.log(req.session);
   res.send('sanity check')
 })
 app.use('/api', AuthRoutes)

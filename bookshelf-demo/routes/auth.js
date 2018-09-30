@@ -5,7 +5,7 @@ const LocalStrategy = require('passport-local');
 const bcrypt = require('bcrypt');
 
 passport.serializeUser( (user, done) => {
-  console.log('serializeUser', user)
+  console.log('03 - serializeUser', user)
   done(null, {
     email: user.email,
     zomg: 'randomData'
@@ -13,7 +13,7 @@ passport.serializeUser( (user, done) => {
 })
 
 passport.deserializeUser( (user, done) => {
-  console.log('deserializing User', user)
+  console.log('01 - deserializing User', user)
   Users
     .where({email: user.email})
     .fetch()
@@ -27,7 +27,7 @@ passport.deserializeUser( (user, done) => {
 })
 
 passport.use(new LocalStrategy({usernameField: 'email'}, (email, password, done) => {
-  console.log('local is being called')
+  console.log('02 - local is being called')
   Users
     .where({email})
     .fetch()
@@ -83,6 +83,9 @@ router.post('/auth/register', (req, res) => {
       // res.sendStatus(500)
     })
 })
+
+
+
 
 router.post('/auth/login', passport.authenticate('local', {failureRedirect: '/'}), (req, res) => {
   // grab the user on record
