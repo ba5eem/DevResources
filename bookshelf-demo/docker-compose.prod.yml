@@ -1,6 +1,6 @@
 version: '3'
 services:
-  bookshelf-auth-demo:
-    image: ba5eem/bookshelf-auth-demo:${IMAGE_VERSION}
+  teee:
+    image: ba5eem/teee:${IMAGE_VERSION}
     environment:
       NODE_ENV: production
