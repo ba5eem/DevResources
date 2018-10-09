@@ -1,6 +1,42 @@
 version: '3'
 services:
   bookshelf-auth-demo:
-    image: ba5eem/bookshelf-auth-demo:${IMAGE_VERSION}
+    image: ba5eem/bookshelf-auth-demo:${IMAGE_VERSION}-local
+    depends_on:
+      - db
+    command: ["./node_modules/.bin/nodemon", "app.js"]
+    container_name: bookshelf-auth-demo
+    volumes:
+      - ".:/app/:rw"
+      - "node-modules-data-volume:/app/node_modules"
+    env_file: .prod.env
     environment:
       NODE_ENV: production
+    ports:
+      - "${EXPRESS_HOST_PORT}:${EXPRESS_CONTAINER_PORT}"
+    networks:
+      - my-app-network
+  db:
+    image: postgres:10.0-alpine
+    env_file: .prod.env
+    volumes:
+      - pg-data-volume:/var/lib/postgresql/data
+    ports:
+      - '${POSTGRES_HOST_PORT}:${POSTGRES_CONTAINER_PORT}'
+    networks:
+      - my-app-network
+  redis:
+    image: redis:4.0-alpine
+    env_file: .prod.env
+    volumes:
+      - redis-data-volume:/data
+    ports:
+      - '${REDIS_HOST_PORT}:${REDIS_CONTAINER_PORT}'
+    networks:
+      - my-app-network
+volumes:
+  pg-data-volume:
+  redis-data-volume:
+  node-modules-data-volume:
+networks:
+  my-app-network:
