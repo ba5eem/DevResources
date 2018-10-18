@@ -1,0 +1,64 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 75px;
+  padding: 20px;
+  color: white;
+}
+
+.App-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.App-title {
+  font-size: 2.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+li {
+  list-style-type: none;
+}
+
+.List {
+  display: flex;
+  flex-direction: column;
+  color: green;
+}
+
+.myh1 {
+  font-size: 20px;
+}
+
+.desc {
+  display: none;
+}
+
+.x {
+  font-family: 'Arial Narrow Bold', sans-serif;
+  font-size: 20px;
+  margin-left: 20px;
+  cursor: pointer;
+  color: red;
+  display: none;
+}
+
+.task:hover {
+  cursor: pointer;
+}
+
+.task:hover .x {
+  display: inline-block;
+}
