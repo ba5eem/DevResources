@@ -1,0 +1,19 @@
+<div class="example-container">
+<form action="">
+  Task:
+  <br />
+  <input type="text" name="name" [(ngModel)]="formData.name">
+  <br />
+  Assignee:
+  <br />
+  <input type="text" name="email" [(ngModel)]="formData.email">
+</form>
+</div>
+
+<div class="example-large-box mat-elevation-z4">
+  <p>Title: {{formData.name}}</p>
+  <br />
+  <br/>
+  <p>Assigned To: {{formData.email}}</p>
+
+</div>
