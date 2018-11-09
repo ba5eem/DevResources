@@ -14,10 +14,7 @@ export class QueueComponent implements OnInit {
   constructor( private backend: BackendService ) { }
 
   ngOnInit() {
-    this.backend.getCard()
-    .then(res => {
-      this.cards = res;
-    });
+
 
   }
 

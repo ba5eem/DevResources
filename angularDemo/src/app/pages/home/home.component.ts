@@ -1,10 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { BackendService } from '../../services/backend.service';
 
 @Component({
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
 })
-export class HomeComponent {
+export class HomeComponent implements OnInit  {
   title = '';
   componentClasses = ['center'];
 
@@ -14,7 +15,20 @@ export class HomeComponent {
     { name: 'jay', position: 'TA' }
   ];
 
-  constructor() {
-    this.title = 'App title';
+
+
+  constructor( private backend: BackendService ) {
+  this.title = 'App title';
+}
+
+  ngOnInit() {
+    this.backend.getCard()
+    .then(res => {
+      this.title = JSON.stringify(res);
+    })
+    .catch(err => {
+      console.log(err);
+    })
+
   }
 }

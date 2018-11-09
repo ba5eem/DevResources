@@ -5,9 +5,16 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class BackendService {
-  url:string = 'http://localhost:4200';
+  url:string = 'http://54.211.31.197';
 
   constructor(private http: HttpClient) { }
+
+  getCard() {
+    return this.http.get(this.url).toPromise();
+    // return this.http.post(this.url, data).toPromise();
+
+    // mock api
+  }
 
   sendContactInfo(data) {
     // return this.http.post(this.url, data).toPromise();

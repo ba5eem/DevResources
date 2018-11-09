@@ -41,8 +41,7 @@ import { LoginComponent } from './pages/login/login.component';
         { path: 'contact', component: ContactComponent },
         { path: 'communication', component: CommunicationComponent },
         { path: '**', redirectTo: '', pathMatch: 'full' }
-      ],
-      { enableTracing: true }
+      ]
     ),
     BrowserModule,
     FormsModule,

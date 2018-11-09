@@ -1,0 +1,5 @@
+version: '3'
+services:
+  deploydemo:
+    build: .
+    image: ba5eem/deploydemo:local

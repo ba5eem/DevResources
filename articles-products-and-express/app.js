@@ -14,6 +14,8 @@ var item              = new Product();
 
 app.engine('.hbs',exphbs({defaultLayout: 'main', extname: '.hbs' }));
 app.set('view engine', '.hbs');
+
+
 app.use(express.static('assets'));
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static('public'));

@@ -1,0 +1,6 @@
+version: '3'
+services:
+  deploydemo:
+    image: ba5eem/deploydemo:0.0.1
+    environment:
+      NODE_ENV: production
