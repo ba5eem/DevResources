@@ -112,11 +112,11 @@ function linkedListGenerator(){ // lets begin
 
 
   return {
-    getHead : getHead,
-    getTail: getTail,
-    add : add,
-    get : get,
-    remove : remove,
-    insert : insert
+    getHead,
+    getTail,
+    add,
+    get,
+    remove,
+    insert
   };
 }

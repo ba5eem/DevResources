@@ -1,0 +1,23 @@
+{
+  "name": "js-queue",
+  "version": "0.0.1",
+  "description": "A queue datastructure excercise implemented in javascript.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --watch --bail"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheWhiteOx/js-queue.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TheWhiteOx/js-queue/issues"
+  },
+  "homepage": "https://github.com/TheWhiteOx/js-queue#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0"
+  }
+}
